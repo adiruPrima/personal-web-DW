@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <i id="logo" class="fa-solid fa-laptop-code"></i>
+        <a href="index.html"><strong>Home</strong></a>
+        <a href="projects.html">My Project</a>
+      </div>
+      <a href="contact.html"><button id="contactMeBtn">Contact Me</button></a>
+    </nav>
+    <main>
+      <h1>GET IN TOUCH</h1>
+      <form onsubmit="sendEmail(event)">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <label for="phone">Phone Number</label>
+        <input type="text" name="phone" id="phone" />
+        <label for="subject">Subject</label>
+        <select name="subject" id="subject">
+          <option value="">Select a subject</option>
+          <option value="Let's Talk">Let's Talk</option>
+          <option value="Frontend">Frontend</option>
+          <option value="Backend">Backend</option>
+          <option value="fullstack">Fullstack</option>
+        </select>
+        <label for="message">Your Message</label>
+        <textarea name="message" id="message"></textarea>
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </main>
+
+    <script src="assets/js/contact.js"></script>
+  </body>
+</html>

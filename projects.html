@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/projects.css" />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <i id="logo" class="fa-solid fa-laptop-code"></i>
+        <a href="index.html"><strong>Home</strong></a>
+        <a href="projects.html">My Project</a>
+      </div>
+      <a href="contact.html"><button id="contactMeBtn">Contact Me</button></a>
+    </nav>
+    <main>
+      <section class="projectInput">
+        <h2>Add My Project</h2>
+        <form onsubmit="addProject(event)">
+          <label for="project-name">Project Name</label>
+          <input type="text" name="project-name" id="project-name" />
+          <div class="project-date">
+            <div class="left-date">
+              <label for="start-date">Start Date</label>
+              <input type="date" id="start-date" class="date-input" />
+            </div>
+            <div class="right-date">
+              <label for="end-date">End Date</label>
+              <input type="date" id="end-date" class="date-input" />
+            </div>
+          </div>
+          <label for="description">Description</label>
+          <textarea name="description" id="description"></textarea>
+          <label>Technologies</label>
+          <div class="project-tech">
+            <label
+              ><input type="checkbox" value="node-js" name="tech" id="node" />Node
+              JS</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="react"
+                name="tech"
+                id="react"
+              />React JS</label
+            >
+            <label
+              ><input type="checkbox" value="vuejs" name="tech" id="vue" />Vue
+              JS</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="js"
+                name="tech"
+                id="javascript"
+              />JavaScript</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="java"
+                name="tech"
+                id="java"
+              />Java</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="python"
+                name="tech"
+                id="python"
+              />Python</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="golang"
+                name="tech"
+                id="golang"
+              />Golang</label
+            >
+          </div>
+          <label for="imageUpload">Upload Image</label>
+          <div class="image-upload">
+            <i class="fa-solid fa-paperclip"></i>
+            <input
+              type="file"
+              name="imageUpload"
+              id="imageUpload"
+              accept="image/*"
+            />
+          </div>
+          <input type="submit" id="submitBtn" value="Submit" />
+        </form>
+      </section>
+
+      <section class="projectOutput">
+        <h2>My Project</h2>
+        <div id="project-deck"></div>
+      </section>   
+
+    <script src="assets/js/projects.js"></script>
+  </body>
+</html>
