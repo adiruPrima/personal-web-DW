@@ -51,3 +51,47 @@ nav div a {
   color: var(--clr-font-secondary);
   cursor: pointer;
 }
+
+#hamburger-menu {
+  font-size: 1.5rem;
+  background-color: transparent;
+  display: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.mobile-menu a {
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(200, 200, 200);
+  color: var(--clr-font-primary);
+  padding: 1rem 0;
+}
+
+.mobile-menu a:hover {
+  background-color: gainsboro;
+}
+
+.mobile-menu :last-child {
+  background-color: rgb(175, 175, 175);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  nav a {
+    display: none;
+  }
+}
