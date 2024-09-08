@@ -1,3 +1,4 @@
+// Convert img to data URL
 function getImageDataURL(file, callback) {
   const reader = new FileReader();
   reader.onloadend = () => callback(reader.result);
