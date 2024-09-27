@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,34 +14,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
     <style>
-      body {
-        background-color: rgb(226, 230, 234);
-      }
-      nav {
-        background-color: rgb(244, 243, 243);
-      }
-      #profile-card {
-        background-color: rgb(250, 250, 250);
-        box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.3);
-      }
-      .card-right {
-        background-color: white;
-        box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.1);
-      }
-      #profile-pic {
-        height: 23rem;
-        object-fit: cover;
-      }
-      .projectOutput {
-        background-color: rgb(250, 250, 250);
-      }
-      .project-card {
-        box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
-      }
-      .project-card img {
-        height: 14rem;
-        object-fit: cover;
-      }
+      body { background-color: rgb(226, 230, 234); } nav { background-color:
+      rgb(244, 243, 243); } #profile-card { background-color: rgb(250, 250,
+      250); box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.3); } .card-right {
+      background-color: white; box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.1); }
+      #profile-pic { height: 23rem; object-fit: cover; } .projectOutput {
+      background-color: rgb(250, 250, 250); } .project-card { box-shadow: 0
+      0.4rem 1rem rgba(0, 0, 0, 0.2); } .project-card img { height: 14rem;
+      object-fit: cover; }
     </style>
   </head>
   <body>
@@ -63,16 +42,16 @@
         <div id="navmenu" class="collapse navbar-collapse">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="index.html" class="nav-link"><strong>Home</strong></a>
+              <a href="/" class="nav-link"><strong>Home</strong></a>
             </li>
             <li class="nav-item">
-              <a href="projects.html" class="nav-link">Add Project</a>
+              <a href="/project" class="nav-link">Add Project</a>
             </li>
             <li class="nav-item">
-              <a href="testimonials.html" class="nav-link">Testimonials</a>
+              <a href="/testimonials" class="nav-link">Testimonials</a>
             </li>
           </ul>
-          <a href="contact.html" class="btn btn-primary ms-auto">Contact Me</a>
+          <a href="/contact" class="btn btn-primary ms-auto">Contact Me</a>
         </div>
       </div>
     </nav>
@@ -94,14 +73,15 @@
               architecto deserunt reiciendis!
             </p>
             <div class="buttons mb-4">
-              <a href="contact.html" class="btn btn-dark me-3">Contact</a>
+              <a href="/contact" class="btn btn-dark me-3">Contact</a>
               <a
                 href="assets/cv-john-doe.pdf"
                 id="downloadCVBtn"
                 target="_blank"
                 class="btn btn-outline-dark"
               >
-                download CV <i class="fa-solid fa-download ms-2"></i>
+                download CV
+                <i class="fa-solid fa-download ms-2"></i>
               </a>
             </div>
             <div class="socials d-flex gap-4 fs-3">
@@ -138,7 +118,7 @@
             <div class="card-right rounded overflow-hidden">
               <img
                 id="profile-pic"
-                src="assets/images/john-doe2.png"
+                src="assets/images/john-doe3.png"
                 alt="profile picture"
                 class="img-fluid w-100"
               />
@@ -163,7 +143,9 @@
     </main>
 
     <!-- Bootstrap Script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    ></script>
     <script src="assets/js/projects.js"></script>
   </body>
 </html>

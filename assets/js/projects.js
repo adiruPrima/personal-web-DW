@@ -57,7 +57,7 @@ function addProject(event) {
 
     // Redirect or clear form
     document.getElementById("postForm").reset(); // Reset form fields if desired
-    window.location.href = "index.html"; // Redirect to display page (index.html)
+    window.location.href = "/"; // Redirect to display page (/)
   });
 }
 
